@@ -1,0 +1,110 @@
+Algoritmo erthjk
+	Definir num,cant,i Como Entero
+	Escribir "Cuantos numeros desea ingresar"
+	leer cant
+	Dimension num(cant)
+	para i=0 hasta cant-1
+		leer num(i)
+	FinPara
+	Escribir mayor(num,cant)
+FinAlgoritmo
+funcion grande = mayor(num por referencia,cant)
+	definir grande,i Como Entero
+	grande=num(0)
+	para i=0 Hasta cant-1
+		si num(i)>grande
+			grande=num(i)
+		FinSi
+		
+	FinPara
+FinFuncion
+Sebastian Astudillo  a  Todos 20:28
+Algoritmo ertui
+	definir frase como cadena
+	Definir letra,tre Como Caracter
+	Definir i,poci Como Entero
+	Escribir "Capo escribi una frase"
+	leer frase
+	Dimension letra(20)
+	para i=0 Hasta Longitud(frase)-1
+		letra(i)=Subcadena(frase,i,i)
+		
+	FinPara
+	Escribir"Capo dame un signo o caracter cualquiera"
+	leer tre
+	Escribir "Y decime en que posicion la queres genio"
+	leer poci 
+	si letra(poci) = "" o letra(poci) = " "
+		letra(poci)=tre
+	SiNo
+		Escribir "JA JA JA, Tonto esta ocupado bobo"
+	FinSi
+	para i=0 hasta Longitud(frase)-1
+		Escribir Sin Saltar letra(i) " "
+	FinPara
+	
+FinAlgoritmo
+Gonzalo Gesell  a  Todos 20:28
+Algoritmo ejercicio6
+	definir frase como cadena
+	Definir letra,tre Como Caracter
+	Definir i,poci Como Entero
+	Escribir "Capo escribi una frase"
+	leer frase
+	Dimension letra(20)
+	para i=0 Hasta 19
+		si i<> Longitud(frase)
+			letra(i)=Subcadena(frase,i,i)
+		SiNo
+			letra(i)=""
+		FinSi
+		
+		
+	FinPara
+	Escribir"Capo dame un signo o caracter cualquiera"
+	leer tre
+	Escribir "Y decime en que posicion la queres genio"
+	leer poci 
+	si letra(poci) = "" o letra(poci) = " "
+		letra(poci)=tre
+	SiNo
+		Escribir "JA JA JA, Tonto esta ocupado bobo"
+	FinSi
+	para i=0 hasta 19
+		Escribir Sin Saltar letra(i) " "
+		si i>9
+			Escribir Sin Saltar " "
+		FinSi
+	FinPara
+	Escribir ""
+	para i=0 hasta 19
+		Escribir i " " Sin Saltar 
+	FinPara
+	
+FinAlgoritmo
+Sebastian Astudillo 20:39
+Algoritmo rtyui
+	Definir num,cant,num2, i como entero
+	Escribir "Cuantos numeros desea ingresar en ambos vectores"
+	leer cant
+	Dimension num(cant),num2(cant)
+	para i=0 Hasta cant-1
+		num(i)=Aleatorio(1,10)
+	FinPara
+	para i=0 Hasta cant-1
+		num2(i)=Aleatorio(1,10)
+	FinPara
+	Escribir yu(num,num2,cant)
+FinAlgoritmo
+
+Funcion igual = yu(num Por Referencia,num2 Por Referencia,cant)
+	definir igual como logico
+	definir i Como entero
+	igual=Verdadero
+	para i=0 Hasta  cant-1
+		si num(i) <> num2(i)
+			igual=Falso
+			i=cant-1
+		FinSi
+	FinPara
+FinFuncion
